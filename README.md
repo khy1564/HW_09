@@ -36,24 +36,24 @@
    - 새로운 라운드 시작 가능
 
 ### 구현
-1. CBGameModeBase
+1. **CBGameModeBase**
    - 플리이어 접속 처리
    - 정답 숫자 생성
    - 플레이어 입력 유효성 검사
    - S / B / OUT 판정
 
-2. CBGameStateBase
+2. **CBGameStateBase**
    - MulticastRPC 구현
    - 서버에서 모든 클라이언트로 메시지 전송
    - UI 반영
      
-3. PlayerController
+3. **PlayerController**
    - UI 초기화
    - 메시지 입력 및 서버 전송
    - 서버 -> GameMode -> 모든 클라이언트
    - 클라이언트에서 메시지 출
      
-4. PlayerState
+4. **PlayerState**
    - 변수 정의 및 초기화
    - 네트워크 동기화
    - 플레이어 상태 문자열 생성    
